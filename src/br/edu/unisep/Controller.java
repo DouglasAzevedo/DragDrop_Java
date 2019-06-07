@@ -66,6 +66,7 @@ public class Controller extends AppController {
         var item = itensOrigem.get(Integer.parseInt(pos));
         //Remove o item da origem;
         itensDestino.add(item);
+        itensOrigem.remove(item);
         event.consume();
     }
 
